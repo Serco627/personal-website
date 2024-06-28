@@ -109,10 +109,9 @@ body {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  background-color: white;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0px 0px 50px 50px;
   box-shadow: 0 4px 8px rgba(51, 63, 86, 0.647);
   padding: 20px;
   margin-bottom: 30px;
@@ -121,15 +120,17 @@ body {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  gap: 40px;
+  gap: 15px;
   padding: 5px 5px;
 }
 
-a {
+header a {
+  font-family: monospace;
   text-decoration: none;
   color: rgb(47, 115, 125);
   font-size: 18px;
   font-weight: bolder;
+  text-shadow: 3px 3px 5px rgba(78, 141, 150, 0.5);
 }
 
 .logo {
@@ -172,14 +173,4 @@ a {
   margin: 40px;
   text-align: center;
   border-radius: 50px 50px;
-}
-
-.aboutmeskills {
-  display: flex;
-  align-items: flex-start;
-  widht: 500px;
-  background-color: rgb(173, 212, 218);
-  border-radius: 50px 50px;
-  box-shadow: 10px 10px 5px rgba(78, 141, 150, 0.5);
-  margin-top: 50px;
 }
