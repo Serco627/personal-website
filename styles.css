@@ -156,3 +156,19 @@ a {
   width: 220px;
   border-radius: 50%;
 }
+
+.aboutme {
+  background-color: rgba(78, 141, 150, 0.2);
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border-radius: 50px 50px;
+}
+
+.skills {
+  background-color: rgba(78, 141, 150, 0.2);
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border-radius: 50px 50px;
+}
