@@ -172,3 +172,7 @@ a {
   text-align: center;
   border-radius: 50px 50px;
 }
+
+.aboutmeskills {
+  display: flex;
+}
