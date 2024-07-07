@@ -99,11 +99,19 @@ a {
 }
 */
 html {
-  background-color: rgb(222, 240, 243);
+  /* background-color: rgb(222, 240, 243); */
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/18/02/35/paper-1914901_1280.jpg);
 }
+
 body {
   width: 600px;
   margin: auto;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .nav-container {
@@ -184,4 +192,28 @@ header a {
 .mission {
   font-size: 18px;
   font-weight: bolder;
+}
+
+.projects {
+  background-color: rgba(78, 141, 150, 0.2);
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border-radius: 50px 50px;
+}
+
+.cards-border {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  border: beige solid 1px;
+  border-radius: 50px 50px;
+  padding: 10px;
+}
+
+.projects img {
+  width: 100px;
+  height: 100px;
 }
