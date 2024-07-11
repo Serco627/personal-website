@@ -211,12 +211,14 @@ header a {
   border: beige solid 1px;
   border-radius: 50px 50px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
-.projects img {
-  width: 100px;
-  height: 100px;
+.project-card img {
+  width: 100%;
+  height: auto;
 }
+
 /* Bildschirme bis 480px Breite */
 @media (max-width: 600px) {
   .cards-border {
