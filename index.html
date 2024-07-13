@@ -18,24 +18,26 @@
       <nav class="nav-container">
         <div class="logo">Sercan Sebil</div>
         <div class="navbar">
-          <div><a href="#aboutme">About me</a></div>
+          <div><a href="#aboutme">About&nbsp;me</a></div>
           <div><a href="#projects">Projects</a></div>
           <div><a href="#skills">Skills</a></div>
-          <div><a href="#contact">Contact</a></div>
+          <button id="contact-button-header">
+            <a href="#contact">Contact</a>
+          </button>
         </div>
       </nav>
     </header>
 
     <main class="main-container">
-      <div><img src="assets/selfie.jpeg" class="foto" /></div>
+      <div><img src="assets/foto-sercan.png" class="foto" /></div>
       <div class="text">
         <span class="info">
-          Name: Sercan Sebil <br />
-          Nickname: Serco <br />
-          Location: Munich </span
+          <strong> Name: Sercan Sebil </strong><br />
+          <strong>Nickname: Serco</strong> <br />
+          <strong>Location: Munich </strong></span
         ><br />
         <br />
-        <span class="mission">Mission:</span> <br />Conquer the digital universe
+        <strong><span class="mission">Mission:</strong></span> <br />Conquer the digital universe
         as a Full Stack Developer, balancing frontend finesse with backend
         wizardry.<br />
         With a creative drive and a passion for solving real-world challenges
@@ -176,8 +178,11 @@
         prefer! Reach out to me through the form below or via my social media
         channels.
       </p>
-      <form>
-        <input type="text" />
+      <form class="form-container">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
       </form>
     </section>
 
