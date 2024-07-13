@@ -123,10 +123,10 @@ a:hover {
 footer a {
   text-decoration: none;
   border: 2px solid var(--border-color);
-  border-radius: 20%;
-  padding: 2px;
-  background-color: var(--highlight-color);
+  border-radius: ;
+  padding: 5px;
   color: var(--link-text-color);
+  background-color: rgba(128, 128, 128, 0.536);
 }
 
 .projects a:visited,
@@ -134,9 +134,14 @@ footer a:visited {
   color: var(--link-text-color);
 }
 
+.projects a:hover,
+footer a:hover {
+  background-color: var(--primary-bg-color);
+}
 nav button {
   border-radius: var(--border-radius-small);
   box-shadow: none;
+  background-color: rgba(128, 128, 128, 0.536);
 }
 
 nav button:hover {
