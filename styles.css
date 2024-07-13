@@ -42,7 +42,7 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
   padding: 20px;
