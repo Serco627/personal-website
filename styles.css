@@ -97,13 +97,15 @@ a:hover {
   align-items: center;
   box-shadow: var(--shadow-color);
   font-size: var(--font-size-small);
-  padding: 20px;
+  padding: 25px;
+  border: 5px solid white;
 }
 
 .foto {
-  height: 300px;
-  width: 290px;
-  border-radius: 30%;
+  height: 270px;
+  width: 280px;
+  border-radius: 40%;
+  border: 1px solid black;
 }
 
 .aboutme,
