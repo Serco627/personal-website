@@ -98,7 +98,7 @@ a:hover {
   box-shadow: var(--shadow-color);
   font-size: var(--font-size-small);
   padding: 25px;
-  border: 5px solid white;
+  border: px solid white;
 }
 
 .foto {
@@ -124,11 +124,9 @@ a:hover {
 .projects a,
 footer a {
   text-decoration: none;
-  border: 2px solid var(--border-color);
   border-radius: ;
   padding: 5px;
   color: var(--link-text-color);
-  background-color: rgba(128, 128, 128, 0.536);
 }
 
 .projects a:visited,
