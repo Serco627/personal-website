@@ -35,9 +35,9 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   border-radius: 0 var(--border-radius-medium);
   margin-bottom: 20px;
-  box-shadow: none;
 }
 
 .nav-container {
@@ -113,10 +113,11 @@ a:hover {
 .projects,
 .contact,
 .profiles {
+  position: relative;
   padding: 20px;
   margin: 40px;
   text-align: center;
-  border-radius: var(--border-radius-large);
+  border-radius: var(--border-radius-medium);
   background-color: var(--primary-bg-color);
   box-shadow: var(--shadow-color);
 }
@@ -212,17 +213,17 @@ p {
 @media (max-width: 600px) {
   .cards-border {
     display: flex;
-    flex-direction: column; /* Karten untereinander anzeigen */
+    flex-direction: column;
     gap: 20px;
   }
 
   .project-card {
-    flex: 1 1 100%; /* Vollständige Breite auf kleinen Bildschirmen */
-    max-width: 100%; /* Verhindert Überlauf */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .navbar div {
-    margin-bottom: 10px; /* Abstand zwischen Navigationselementen */
+    margin-bottom: 10px;
   }
 }
 
@@ -230,22 +231,22 @@ p {
 @media (min-width: 601px) and (max-width: 820px) {
   .cards-border {
     display: flex;
-    flex-direction: column; /* Karten untereinander anzeigen */
+    flex-direction: column;
     gap: 20px;
   }
 
   .project-card {
-    flex: 1 1 100%; /* Vollständige Breite auf Tablets */
-    max-width: 100%; /* Verhindert Überlauf */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .navbar {
-    flex-direction: row; /* Navigation nebeneinander anzeigen */
-    justify-content: center; /* Zentrieren der Navigation */
+    flex-direction: row;
+    justify-content: center;
   }
 
   .navbar div {
-    margin: 0 10px; /* Abstand zwischen Navigationselementen */
+    margin: 0 10px;
   }
 }
 
@@ -253,22 +254,22 @@ p {
 @media (min-width: 821px) and (max-width: 1199px) {
   .cards-border {
     display: flex;
-    flex-direction: column; /* Karten untereinander anzeigen */
+    flex-direction: column;
     gap: 20px;
   }
 
   .project-card {
-    flex: 1 1 100%; /* Vollständige Breite auf mittleren Desktops */
-    max-width: 100%; /* Verhindert Überlauf */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .navbar {
-    flex-direction: row; /* Navigation nebeneinander anzeigen */
-    justify-content: center; /* Zentrieren der Navigation */
+    flex-direction: row;
+    justify-content: center;
   }
 
   .navbar div {
-    margin: 0 10px; /* Abstand zwischen Navigationselementen */
+    margin: 0 10px;
   }
 }
 
@@ -280,24 +281,44 @@ p {
   }
 
   .logo {
-    font-size: 2rem; /* Logo-Größe anpassen */
+    font-size: 2rem;
   }
 
   .nav-container {
-    font-size: var(--font-size-large); /* Schriftgröße der Navigation */
+    font-size: var(--font-size-large);
   }
 
   .cards-border {
     display: flex;
-    flex-wrap: wrap; /* Ermöglicht Umbruch der Karten */
-    gap: 20px; /* Abstand zwischen Karten */
-    justify-content: space-between; /* Verteilung der Karten */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
   }
 
   .project-card {
-    flex: 1 1 calc(33% - 40px); /* Drei Karten pro Zeile */
-    max-width: calc(
-      33% - 40px
-    ); /* Sicherstellen, dass Karten nebeneinander passen */
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
   }
+}
+
+.contact-icons:hover {
+  background-color: var(--highlight-color);
+}
+
+.contact-icons {
+  border-radius: 20%;
+  margin: 10px;
+}
+
+.aboutme {
+  position: relative;
+}
+.aboutme-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  border-radius: var(--border-radius-small);
+  filter: brightness(0) saturate(100%) invert(11%) sepia(76%) saturate(4321%)
+    hue-rotate(201deg) brightness(86%) contrast(102%);
 }
