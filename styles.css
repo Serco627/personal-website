@@ -180,27 +180,20 @@ nav button:hover {
 }
 
 .project-card {
-  border: 3px solid var(--border-color);
-  border-radius: var(--border-radius-large);
   padding: 20px;
   box-sizing: border-box;
-  flex: 1 1 calc(33% - 40px); /* Responsive card width */
+  flex: 1 1 calc(33% - 40px);
   max-width: calc(33% - 40px); /* Prevent card overflow */
-  box-shadow: var(--shadow-color); /* Added shadow for visibility */
-  background-color: white; /* Ensure background color for visibility */
+  background-color: white;
+  box-shadow: var(--color-granite) 0px 2px 8px;
+  border-radius: 1rem;
 }
 
 .project-card img {
   width: 100%;
   height: auto;
   border-radius: var(--border-radius-small);
-}
-
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  border: solid 1px black;
 }
 
 .footer {
@@ -344,4 +337,10 @@ p {
   border-radius: var(--border-radius-small);
   filter: brightness(0) saturate(100%) invert(11%) sepia(76%) saturate(4321%)
     hue-rotate(201deg) brightness(86%) contrast(102%);
+}
+
+h1 {
+  color: black;
+  font-size: 2rem;
+  text-shadow: 5px 5px 4px rgba(205, 217, 253, 0.8);
 }
