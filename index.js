@@ -1,8 +1,2 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navbar = document.getElementById("navbar");
-
-  menuToggle.addEventListener("click", function () {
-    navbar.classList.toggle("navbar.active");
-  });
-});
+const navbar = document.querySelector("[data-js='navbar']");
+console.log(navbar);

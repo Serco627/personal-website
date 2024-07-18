@@ -342,5 +342,21 @@ p {
 h1 {
   color: black;
   font-size: 2rem;
-  text-shadow: 5px 5px 4px rgba(205, 217, 253, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.main-container {
+  position: relative;
+}
+
+.info-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.up-button {
+  position: fixed;
+  left: 10px;
+  bottom: 0px;
 }
