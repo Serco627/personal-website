@@ -23,9 +23,9 @@
 html {
   background-image: linear-gradient(
     to right,
-    #202f5e81 0%,
-    #101c3c00 50%,
-    #202f5e81 100%
+    rgba(32, 48, 94, 0.403) 0%,
+    rgba(16, 28, 60, 0.3) 20%,
+    rgba(32, 48, 94, 0.407) 80%
   );
   /* background-image: url("https://cdn.pixabay.com/photo/2015/12/19/16/24/paper-1099962_1280.jpg");
   background-size: cover;
